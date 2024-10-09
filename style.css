@@ -65,6 +65,7 @@ h2 a {
 
 h2 a:hover {
     text-decoration: underline;
+    color: #e8491d; /* Mudança de cor ao passar o mouse */
 }
 
 footer {
@@ -76,6 +77,11 @@ footer {
 
 footer a {
     color: #e8491d;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
 }
 
 /* Estilo para imagens dos projetos */
@@ -84,5 +90,4 @@ footer a {
     height: auto;
     border-radius: 5px;
     margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    box-shadow
