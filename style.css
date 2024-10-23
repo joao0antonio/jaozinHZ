@@ -1,230 +1,162 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio de Projetos de Programação</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Exemplo de degradê de cores quentes */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #282c34;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-        }
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
 
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-        nav ul li a:hover {
-            background-color: #61dafb;
-            color: #282c34;
-        }
+nav ul li a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
 
-        main {
-            padding: 40px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+main {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .project {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.project {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-        .project h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
+.project h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
 
-        .project h2 a {
-            text-decoration: none;
-            color: #282c34;
-            transition: color 0.3s ease;
-        }
+.project h2 a {
+    text-decoration: none;
+    color: #282c34;
+    transition: color 0.3s ease;
+}
 
-        .project h2 a:hover {
-            color: #61dafb;
-        }
+.project h2 a:hover {
+    color: #61dafb;
+}
 
-        .project-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
 
-        .project p {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
+.project p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
 
-        .project a {
-            color: #61dafb;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.project a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .project a:hover {
-            text-decoration: underline;
-        }
+.project a:hover {
+    text-decoration: underline;
+}
 
-        footer {
-            background-color: #282c34;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 
-        footer h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
-        footer a {
-            color: #61dafb;
-            text-decoration: none;
-        }
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a:hover {
+    text-decoration: underline;
+}
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 
-            nav ul li a {
-                font-size: 1em;
-            }
+    nav ul li a {
+        font-size: 1em;
+    }
 
-            .project {
-                padding: 15px;
-            }
+    .project {
+        padding: 15px;
+    }
 
-            .project h2 {
-                font-size: 1.3em;
-            }
-        }
+    .project h2 {
+        font-size: 1.3em;
+    }
+}
 
-        @media (max-width: 480px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-            nav ul li a {
-                display: block;
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Meu Portfólio de Projetos de Programação do João Eyng</h1>
-    <nav>
-        <ul>
-            <li><a href="#Flash-Cards">Flash-Cards</a></li>
-            <li><a href="#Livaria-Online">Livaria-Online</a></li>
-            <li><a href="#landing-page">Top 3 pontuadores no Basquete</a></li>
-            <li><a href="#ecommerce">E-commerce de Aplicativos</a></li>
-            <li><a href="#portfolio-fotografia">Portfólio de Programadores</a></li>
-            <li><a href="#site-restaurante">Sistema de Reservas</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <article id="site-pessoal" class="project">
-        <h2><a href="URL_DO_PROJETO_1" target="_blank">1. Aplicação Pessoal</a></h2>
-        <img src="URL_DA_IMAGEM_1" alt="Flash-Cards" class="project-image">
-        <p><strong>Descrição:</strong> Flash-Cards com perguntas diversas.</p>
-        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
-        <p><strong>Características:</strong> Interface intuitiva, armazenamento local e funcionalidades de organização.</p>
-        <p><strong>Link:</strong> <a href="https://acacmbv.vercel.app/" target="_blank">Acesse o projeto aqui</a></p>
-    </article>
-
-    <article id="blog-viagens" class="project">
-        <h2><a href="URL_DO_PROJETO_2" target="_blank">2. Livaria-Online</a></h2>
-        <img src="URL_DA_IMAGEM_2" alt="Livraria-Online" class="project-image">
-        <p><strong>Descrição:</strong> Um blog para compartilhar dicas e experiências sobre programação.</p>
-        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
-        <p><strong>Características:</strong> Comentários, posts em destaque e categorias de conteúdo.</p>
-        <p><strong>Link:</strong> <a href="https://jhozin.vercel.app/" target="_blank">Acesse o projeto aqui</a></p>
-    </article>
-
-    <article id="landing-page" class="project">
-        <h2><a href="URL_DO_PROJETO_3" target="_blank">3. Top 3 pontuadores no Basquete</a></h2>
-        <img src="URL_DA_IMAGEM_3" alt="Exemplo da Landing Page" class="project-image">
-        <p><strong>Descrição:</strong> 3 principais pontuadores da história do basquete.</p>
-        <p><strong>Tecnologias:</strong> HTML5, CSS3</p>
-        <p><strong>Características:</strong> Apresentação de recursos, chamadas para ação e depoimentos.</p>
-        <p><strong>Link:</strong> <a href="https://next0text.vercel.app/" target="_blank">Acesse o projeto aqui</a></p>
-    </article>
-
-    <article id="ecommerce" class="project">
-        <h2><a href="URL_DO_PROJETO_4" target="_blank">Amigos de Escola</a></h2>
-        <img src="URL_DA_IMAGEM_4" alt="Tela do E-commerce de Aplicativos" class="project-image">
-        <p><strong>Descrição:</strong> Um site de e-commerce para venda de aplicativos de software.</p>
-        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript</p>
-        <p><strong>Características:</strong> Carrinho de compras, avaliações de usuários e sistema de checkout.</p>
-        <p><strong>Link:</strong> <a href="https://i-jho.vercel.app/" target="_blank">Acesse o projeto aqui</a></p>
-    </article>
-
-    <article id="portfolio-fotografia" class="project">
-        <h2><a href="URL_DO_PROJETO_5" target="_blank">5. Portfólio de Programadores</a></h2>
-        <img src="URL_DA_IMAGEM_5" alt="Exibição do Portfólio de Programadores" class="project-image">
-        <p><strong>Descrição:</strong> Um site para exibir os projetos de programação de diferentes desenvolvedores.</p>
-        <p><strong>Tecnologias:</strong> HTML5, CSS3</p>
-        <p><strong>Características:</strong> Galeria de projetos, biografias e formulários de contato.</p>
-        <p><strong>Link:</strong> <a href="URL_DO_LINK_5" target="_
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+}
